@@ -1,3 +1,21 @@
-@import 'helpers/helpers.scss';
-@import 'layouts/master.scss';
-@import 'layouts/main.scss';
+// Fix for Roboto font path
+$roboto-font-path: '../assets/';
+
+// Materialize styles
+@import 'components/color';
+
+@import 'components/variables';
+
+@import "materialize";
+@import 'ember-cli-materialize';
+
+// Custom App Stylesheets
+// General
+  //Variables
+    @import 'helpers/variables';
+  //Layouts
+  @import 'layouts/master';
+  // Components
+    @import 'layouts/components/navbar';
+  // Routes
+    @import 'layouts/routes/main.scss';
