@@ -6,6 +6,7 @@ $roboto-font-path: '../assets/';
 
 @import 'components/variables';
 
+
 @import "materialize";
 @import 'ember-cli-materialize';
 
@@ -13,9 +14,11 @@ $roboto-font-path: '../assets/';
 // General
   //Variables
     @import 'helpers/variables';
+    @import 'helpers/browser';
   //Layouts
   @import 'layouts/master';
   // Components
     @import 'layouts/components/navbar';
+    @import 'layouts/components/main-view';
   // Routes
     @import 'layouts/routes/main.scss';

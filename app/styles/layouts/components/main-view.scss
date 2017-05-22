@@ -1,0 +1,58 @@
+.responsive-bg-image {
+  background-size: cover;
+  background-image: url('../../../fisting.jpg');
+}
+
+.main-view {
+  @extend .responsive-bg-image;
+
+}
+
+/* Retina display */
+@media screen and (min-width: 1024px){
+
+  .responsive-bg-image {
+    background-position: center;
+    background-size: 100vw 150vh  !important;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px){
+  .responsive-bg-image {
+    background-position: center 200vh;
+    background-repeat: repeat-y;
+    background-size: 100vw 100vh  !important;
+  }
+
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+  .responsive-bg-image {
+    background-position: center 200vh;
+    background-repeat: repeat-y;
+    background-size: 100vw 100vh  !important;
+  }
+
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+  .responsive-bg-image {
+    background-position: center 200vh;
+    background-repeat: repeat-y;
+    background-size: 100vw 50vh  !important;
+  }
+
+}
+
+/* Mobile LD */
+@media screen and (max-width: 350px){
+    .responsive-bg-image {
+      background-position: center 200vh;
+      background-repeat: repeat-y;
+      background-size: 100vw 50vh  !important;
+    }
+
+}

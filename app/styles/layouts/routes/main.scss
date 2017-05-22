@@ -1,3 +1,10 @@
-.main-page {
-  border: 1px solid $text-color;
+.transparent-bg {
+  background-color: transparent !important;
+}
+.secondary-bg {
+  background-color: $secondary-color !important;
+}
+
+.secondary-text-color {
+  color: $secondary-color !important;
 }
